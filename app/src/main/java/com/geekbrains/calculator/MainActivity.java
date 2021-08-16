@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView firstNum;
     private TextView secondNum;
 
+    private String firstOperand;
+    private String secondOperand;
+    private String operand;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +45,24 @@ public class MainActivity extends AppCompatActivity {
         Button buttonSub = findViewById(R.id.button_sub);
         Button buttonEq = findViewById(R.id.button_eq);
         
-        
+
+        initButtonNumberClickListener(button0);
         initButtonNumberClickListener(button1);
+        initButtonNumberClickListener(button2);
+        initButtonNumberClickListener(button3);
+        initButtonNumberClickListener(button4);
+        initButtonNumberClickListener(button5);
+        initButtonNumberClickListener(button6);
+        initButtonNumberClickListener(button7);
+        initButtonNumberClickListener(button8);
+        initButtonNumberClickListener(button9);
+
+        initButtonOperandClickListener(buttonAdd);
+        initButtonOperandClickListener(buttonMult);
+        initButtonOperandClickListener(buttonDiv);
+        initButtonOperandClickListener(buttonSub);
+
+        initButtonEqualsClickListener(buttonEq);
 
 
     }
@@ -50,12 +70,53 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setText(firstNum, button);
+                setText(firstNum, button.getText().toString());
             }
         });
     }
 
-    private void setText(TextView num, Button button){
-        num.append(button.getText().toString());
+    private void initButtonOperandClickListener(Button button) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                firstOperand = firstNum.getText().toString();
+                operand = button.getText().toString();
+                setText(firstNum);
+            }
+        });
+    }
+    private void initButtonEqualsClickListener(Button button) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                secondOperand = firstNum.getText().toString();
+                double x= calculation(firstOperand,secondOperand,operand);
+                setText(firstNum);
+                setText(firstNum,Double.toString(x));
+            }
+        });
+    }
+
+    private double calculation(String first, String second, String operand){
+        if(operand == "+"){
+            return (Double.parseDouble(first) + Double.parseDouble(second));
+        }
+        else if(operand == "-"){
+            return (Double.parseDouble(first) - Double.parseDouble(second));
+        }
+        else if(operand == "*"){
+            return (Double.parseDouble(first) * Double.parseDouble(second));
+        }
+        else if(operand == "/"){
+            return (Double.parseDouble(first) / Double.parseDouble(second));
+        }
+        else return 0.0;
+    }
+
+    private void setText(TextView num, String text){
+        num.append(text);
+    }
+    private void setText(TextView num){
+        num.setText(null);
     }
 }
