@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         Button buttonAdd = findViewById(R.id.button_add);
         Button buttonSub = findViewById(R.id.button_sub);
         Button buttonEq = findViewById(R.id.button_eq);
+        Button point = findViewById(R.id.button_point);
+
         
 
         initButtonNumberClickListener(button0);
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         initButtonNumberClickListener(button7);
         initButtonNumberClickListener(button8);
         initButtonNumberClickListener(button9);
+        initButtonNumberClickListener(point);
 
         initButtonOperandClickListener(buttonAdd);
         initButtonOperandClickListener(buttonMult);
@@ -98,16 +101,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private double calculation(String first, String second, String operand){
-        if(operand == "+"){
+        if(operand.equals("+")){
             return (Double.parseDouble(first) + Double.parseDouble(second));
         }
-        else if(operand == "-"){
+        else if(operand.equals("-")){
             return (Double.parseDouble(first) - Double.parseDouble(second));
         }
-        else if(operand == "*"){
+        else if(operand.equals("*")){
             return (Double.parseDouble(first) * Double.parseDouble(second));
         }
-        else if(operand == "/"){
+        else if(operand.equals("/")){
             return (Double.parseDouble(first) / Double.parseDouble(second));
         }
         else return 0.0;

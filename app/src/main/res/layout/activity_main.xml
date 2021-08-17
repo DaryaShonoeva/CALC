@@ -11,15 +11,16 @@
         android:id="@+id/first_num"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_columnSpan="2"
-        android:text=" "
+        android:layout_columnSpan="3"
         android:textSize="@dimen/button_text_size"/>
-    <TextView
-        android:id="@+id/second_num"
-        android:layout_width="60dp"
+    <Button
+        android:id="@+id/button_clean"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnSpan="2"
-        android:textSize="@dimen/button_text_size"/>
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="bold"
+        android:layout_columnSpan="1"
+        android:text="@string/clean_button" />
 
     <Button
         android:id="@+id/button_1"

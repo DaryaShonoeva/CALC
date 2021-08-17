@@ -16,4 +16,5 @@
     <string name="_3_button_text">3</string>
     <string name="_2_button_text">2</string>
     <string name="_1_button_text">1</string>
+    <string name="clean_button">C</string>
 </resources>
