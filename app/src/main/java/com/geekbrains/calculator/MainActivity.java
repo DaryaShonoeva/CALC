@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonSub = findViewById(R.id.button_sub);
         Button buttonEq = findViewById(R.id.button_eq);
         Button point = findViewById(R.id.button_point);
+        Button clean = findViewById(R.id.button_clean);
 
         
 
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         initButtonOperandClickListener(buttonSub);
 
         initButtonEqualsClickListener(buttonEq);
+
+        initButtonCleanClickListener(clean);
 
 
     }
@@ -96,6 +99,15 @@ public class MainActivity extends AppCompatActivity {
                 double x= calculation(firstOperand,secondOperand,operand);
                 setText(firstNum);
                 setText(firstNum,Double.toString(x));
+            }
+        });
+    }
+
+    private void initButtonCleanClickListener(Button button) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setText(firstNum);
             }
         });
     }
