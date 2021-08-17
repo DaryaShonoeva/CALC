@@ -7,118 +7,186 @@
     android:layout_gravity = "center"
     android:columnCount="4"
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/first_num"
-        android:layout_width="60dp"
+        android:layout_width="173dp"
         android:layout_height="wrap_content"
         android:layout_columnSpan="3"
-        android:textSize="@dimen/button_text_size"/>
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_clean"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:textStyle="bold"
         android:layout_columnSpan="1"
-        android:text="@string/clean_button" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/clean_button"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_1_button_text"
         android:textSize="@dimen/button_text_size"
-        android:textStyle="bold"
-        android:text="@string/_1_button_text" />
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_2_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_2_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_3_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_3_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/mult_button_text" />
+        android:backgroundTint="#FF9800"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/mult_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_4_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_4_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_5_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_5_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_6_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_6_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_div"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/div_button_text" />
+        android:backgroundTint="#FF9800"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/div_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_7_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_7_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_8_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_8_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_9_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_9_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/add_button_text" />
+        android:backgroundTint="#FF9800"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/add_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/_0_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/_0_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/point_button_text" />
+        android:backgroundTint="#A69E9B"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/point_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_eq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/eq_button_text" />
+        android:backgroundTint="#FF9800"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/eq_button_text"
+        android:textSize="@dimen/button_text_size" />
+
     <Button
         android:id="@+id/button_sub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/button_text_size"
-        android:text="@string/sub_buttton_text" />
+        android:backgroundTint="#FF9800"
+        android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:text="@string/sub_buttton_text"
+        android:textSize="@dimen/button_text_size" />
 
 
 
